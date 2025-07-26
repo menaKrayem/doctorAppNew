@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back"
+
+        android:layout_alignParentStart="true"
+        />
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+        android:layout_alignParentEnd="true"
+        />
+    <ImageView
+        android:id="@+id/iv_doctorimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/detalis"
+        android:layout_marginTop="60dp"
+        />
+    <TextView
+        android:id="@+id/tv_doctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctorName"
+        android:layout_below="@+id/iv_doctorimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        />
+    <TextView
+        android:id="@+id/tv_specializeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/specializeName"
+        android:layout_below="@+id/tv_doctorName"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/blue"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="235dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/information"
+        android:layout_marginTop="280dp"
+        />
+
+    <Button
+        android:id="@+id/btn_booknow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/blue"
+        android:clickable="true"
+        android:text="@string/booknow"
+        android:layout_below="@+id/iv_information"
+        android:textSize="18sp" />
+</RelativeLayout>
